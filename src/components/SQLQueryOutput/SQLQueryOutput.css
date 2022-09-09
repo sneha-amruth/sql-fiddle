@@ -1,21 +1,27 @@
+.output-title {
+  border-bottom: 1px solid;
+  border-color: #01c3dd;
+  color: #01c3dd;
+  margin: 0 6rem 1rem 2rem;
+}
 .table-container {
-  display: flex;
-  justify-content: center;
   overflow: auto;
+  height: 26rem;
+}
+.table-container thead th {
+  position: sticky;
+  top: 0;
 }
 table {
   border-collapse: collapse;
-  margin: 0 4rem;
+  width: 80%;
+  margin: 0 2rem;
 }
-
-tbody {
-  height: 40rem;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
 th,
 td {
+  padding: 0.6rem 2rem;
   border: 1px solid #817e7e;
-  padding: 0.8rem;
+}
+th {
+  background: var(--secondary-background);
 }
