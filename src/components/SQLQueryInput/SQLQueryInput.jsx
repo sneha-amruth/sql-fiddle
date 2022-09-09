@@ -51,7 +51,7 @@ function SQLQueryInput() {
         <div className="textarea-container">
           <textarea
             ref={textAreaRef}
-            placeholder="enter your SQL query"
+            placeholder="--enter your SQL query"
             value={query}
             onChange={handleQueryChange}
           ></textarea>
