@@ -6,28 +6,35 @@ function SQLQueryOutput({ data }) {
   const body = data.slice(1, data.length - 1);
 
   return (
-    <div className="table-container">
+    <>
       {data.length > 0 && (
-        <table>
-          <thead>
-            <tr>
-              {heading.map((colHeader, index) => {
-                return <th key={index}>{colHeader}</th>;
-              })}
-            </tr>
-          </thead>
-          <tbody>
-            {body.map((dataList) => (
-              <tr>
-                {dataList.map((value, index) => (
-                  <td key={index}>{value}</td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <div className="output-title">
+          <h4>Output</h4>
+        </div>
       )}
-    </div>
+      <div className="table-container">
+        {data.length > 0 && (
+          <table>
+            <thead>
+              <tr>
+                {heading.map((colHeader, index) => {
+                  return <th key={index}>{colHeader}</th>;
+                })}
+              </tr>
+            </thead>
+            <tbody>
+              {body.map((dataList) => (
+                <tr>
+                  {dataList.map((value, index) => (
+                    <td key={index}>{value}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
+      </div>
+    </>
   );
 }
 
