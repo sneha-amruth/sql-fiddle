@@ -8,7 +8,7 @@ import TickIcon from "../assets/TickIcon";
 function SQLQueryInput() {
   const [query, setQuery] = useState("");
   const [copySuccess, setCopySuccess] = useState(false);
-  const { getData, data, loading } = useRunSQLQuery();
+  const { getData, data } = useRunSQLQuery();
   const handleQueryChange = (e) => {
     setQuery(e.target.value);
   };
@@ -23,9 +23,6 @@ function SQLQueryInput() {
     document.execCommand("copy");
     e.target.focus();
     setCopySuccess(true);
-  };
-  const handleClear = () => {
-    setQuery("");
   };
 
   useEffect(() => {
@@ -61,7 +58,7 @@ function SQLQueryInput() {
           {copySuccess && <TickIcon className="tick-icon"></TickIcon>}
         </div>
       </div>
-      <SQLQueryOutput data={data} loading={loading}></SQLQueryOutput>
+      <SQLQueryOutput data={data}></SQLQueryOutput>
     </>
   );
 }

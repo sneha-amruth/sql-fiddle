@@ -23,8 +23,8 @@ function SQLQueryOutput({ data }) {
               </tr>
             </thead>
             <tbody>
-              {body.map((dataList) => (
-                <tr>
+              {body.map((dataList, index) => (
+                <tr key={index}>
                   {dataList.map((value, index) => (
                     <td key={index}>{value}</td>
                   ))}
