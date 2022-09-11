@@ -40,7 +40,11 @@ function SQLQueryInput() {
             <h4>Input</h4>
           </div>
           <div className="btn-container">
-            <button className="btn" type="submit" onClick={handleRunQuery}>
+            <button
+              className="btn primary"
+              type="submit"
+              onClick={handleRunQuery}
+            >
               Run SQL
             </button>
           </div>

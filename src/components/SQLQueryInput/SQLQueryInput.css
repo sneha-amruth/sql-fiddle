@@ -11,25 +11,29 @@
 }
 .input-title {
   padding: 0.2rem 1.4rem;
-  margin-right: 14rem;
+  /* margin-right: 14rem; */
   background-color: var(--secondary-background);
 }
 .btn-container {
-  padding: 0.4rem;
-  align-self: center;
+  padding: 1.2rem;
+  display: flex;
 }
 .btn {
   background-color: var(--primary-button-background);
   color: #fff;
   padding: 0.6rem;
+  margin-left: 0.4rem;
   border: 0;
   font-size: 1rem;
   border-radius: 0.2rem;
   cursor: pointer;
 }
+.secondary {
+  background-color: #5083ea;
+}
 textarea {
   width: 100%;
-  height: 150px;
+  height: 160px;
   padding: 0.8rem 1.2rem;
   border: none;
   outline: 0;
