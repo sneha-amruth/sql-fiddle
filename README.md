@@ -11,4 +11,5 @@ This web app enables you to input an sql query and run it. The output is display
 
 Lighthouse report
 
-<img width="1431" alt="Screenshot 2022-09-12 at 1 29 05 AM" src="https://user-images.githubusercontent.com/22203737/189546691-a916681a-82ff-428d-85bf-e89d8e406c6a.png">
+<img width="908" alt="Screenshot 2022-09-12 at 1 41 43 AM" src="https://user-images.githubusercontent.com/22203737/189547056-176fff5d-0ad4-4bc4-89ef-2254a5ebcdfd.png">
+<img width="864" alt="Screenshot 2022-09-12 at 1 43 03 AM" src="https://user-images.githubusercontent.com/22203737/189547095-84fe2e1d-0390-4b74-8a9d-2d8b38abbfed.png">
